@@ -1,3 +1,29 @@
 .calculator {
     border: 2px solid grey;
 }
+
+.btn, .btn-num, .btn-equals {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 5%;
+    margin-bottom: 1px;
+}
+
+.btn-num {
+    width: 5%;
+    margin-bottom: 1px;
+}
+
+.btn-equals {
+    height: 62px; 
+    margin-right: 822px;
+    margin-top: 1px;
+    width: 53px;
+    display: flex;
+    flex-direction: right;
+    float: right;
+    
+}
