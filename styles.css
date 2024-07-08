@@ -2,12 +2,12 @@
     border: 2px solid grey;
 }
 
-.btn, .btn-num, .btn-equals {
+.btn-operation, .btn-num, .btn-equals {
     border: 1px solid black;
     box-sizing: border-box;
 }
 
-.btn {
+.btn-operation {
     width: 5%;
     margin-bottom: 1px;
 }
