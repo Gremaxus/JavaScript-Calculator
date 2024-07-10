@@ -55,34 +55,14 @@ function getOperand() {
 }
 
 function checkOperation() {
-    let operation;
+    const ids = ["operation-addition", "operation-subtraction", "operation-multiplication", "operation-division"];
+    const operations = {};
     
-    switch (operation) {
-        case "+":
-          console.log("+");
-          return document.getElementById("operation-addition").value;       
+    for (const id of ids) {
+        const element = document.getElementById(id);
+        operations[id] = element.value;
+    }
     
-        case "-":
-          console.log("-");
-          return document.getElementById("operation-subtraction").value;
-             
-        case "*":
-          console.log("*");
-          return document.getElementById("operation-multiplication").value;         
-    
-        case "/":
-          console.log("/");
-          return document.getElementById("operation-division").value;          
-    
-        case "=":
-          console.log("=");
-          return document.getElementById("equals").value;
-    
-        //default:
-         //return alert(
-            //"The operations and/or numbers you have entered is invalid."
-          //);
-      }
 }
 
 function addition() {
