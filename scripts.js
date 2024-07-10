@@ -7,27 +7,22 @@ function buttonOperation() {
     case "+":
       console.log("+");
       return nums + nums;
-      break;
 
     case "-":
       console.log("-");
       return nums - nums;
-      break;
 
     case "*":
       console.log("*");
       return nums * nums;
-      break;
 
     case "/":
       console.log("/");
       return nums / nums;
-      break;
 
     case "=":
       console.log("=");
       return nums;
-      break;
 
     default:
       return alert(
@@ -38,7 +33,7 @@ function buttonOperation() {
 
 // Would probably make sense here to use the same function I put in checkOperation().
 function buttonNumbers() {
-  const numbers = [];
+  const ids = ["num-1", "num-2", "num-3", "num-4", "num-5", "num-6", "num-7", "num-8", "num-9", "num-0"];
   const elements = document.getElementById("btn-num").value;
 
   for (elements of numbers) {
