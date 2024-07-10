@@ -1,6 +1,6 @@
 function buttonOperation() {
-  const operation = getOperand();
-  const calculation = document.getElementById("equals");
+  const operation = getOperand(); // <--- Don't forget to change this later!
+  const calculation = document.getElementById("equals"); // Probably should change this to a function and use at the end of this function.
   let nums = buttonNumbers();
 
   switch (operation) {
@@ -36,6 +36,7 @@ function buttonOperation() {
   }
 }
 
+// Would probably make sense here to use the same function I put in checkOperation().
 function buttonNumbers() {
   const numbers = [];
   const elements = document.getElementById("btn-num").value;
@@ -47,6 +48,7 @@ function buttonNumbers() {
   return numbers;
 }
 
+// This function is probably going to get removed as checkOperation() has turned into a point of replacing this.
 function getOperand() {
   const addition = document.getElementById("operation-addition").value;
   const subtraction = document.getElementById("operation-subtraction").value;
@@ -65,6 +67,7 @@ function checkOperation() {
     
 }
 
+// Unsure if any of these functions below will be used unless they can contribute to cleanliness of the code later.
 function addition() {
     const addition = document.getElementById("operation-addition").value;
 }
