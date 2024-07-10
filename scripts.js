@@ -1,22 +1,48 @@
 function buttonOperation() {
-    buttonNumbers();
-    const operation = document.getElementsByClassName("btn-operation");
+  const operation = document.getElementsByClassName("btn-operation");
+  const calculation = document.getElementById("equals");
+  let nums = buttonNumbers();
 
-    switch (operation) {
-        case '+':
+  switch (operation) {
+    case "+":
+        console.log("+");
+      return nums + nums;
+      break;
 
-    }
+    case "-":
+        console.log("-");
+      return nums - nums;
+      break;
 
+    case "*":
+        console.log("*");
+      return nums * nums;
+      break;
+
+    case "/":
+        console.log("/");
+      return nums / nums;
+      break;
+
+    case "=":
+        console.log("=");
+      return nums;
+      break;
+
+    default:
+      return alert(
+        "The combination of operations and numbers you have entered is invalid."
+      );
+  }
 }
 
 function buttonNumbers() {
-    const numbers = [];
+  const numbers = [];
+  const elements = document.getElementById("btn-num").value;
 
-    for (const nums of numbers) {
-        numbers.push(nums);
-    }
-    
-    const numNumbers = nums;
+  for (elements of numbers) {
+    numbers.push(numbers);
+  }
 
-    return numbers, numNumbers;
+  return numbers;
 }
