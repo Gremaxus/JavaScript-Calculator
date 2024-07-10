@@ -1,31 +1,31 @@
 function buttonOperation() {
-  const operation = document.getElementsByClassName("btn-operation");
+  const operation = getOperand();
   const calculation = document.getElementById("equals");
   let nums = buttonNumbers();
 
   switch (operation) {
     case "+":
-        console.log("+");
+      console.log("+");
       return nums + nums;
       break;
 
     case "-":
-        console.log("-");
+      console.log("-");
       return nums - nums;
       break;
 
     case "*":
-        console.log("*");
+      console.log("*");
       return nums * nums;
       break;
 
     case "/":
-        console.log("/");
+      console.log("/");
       return nums / nums;
       break;
 
     case "=":
-        console.log("=");
+      console.log("=");
       return nums;
       break;
 
@@ -45,4 +45,13 @@ function buttonNumbers() {
   }
 
   return numbers;
+}
+
+function getOperand() {
+  const addition = document.getElementById("operation-addition").value;
+  const subtraction = document.getElementById("operation-subtraction").value;
+  const multiplication = document.getElementById(
+    "operation-multiplication"
+  ).value;
+  const division = document.getElementById("operation-division").value;
 }
