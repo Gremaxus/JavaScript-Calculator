@@ -34,16 +34,20 @@ function buttonOperation() {
 // Would probably make sense here to use the same function I put in checkOperation().
 function buttonNumbers() {
   const ids = ["num-0", "num-1", "num-2", "num-3", "num-4", "num-5", "num-6", "num-7", "num-8", "num-9", "decimal"];
-  const numbers = {};
-  const length = document.getElementByClassName("")
+  let numbers = {};
 
   for (const id of ids) {
     const element = document.getElementById(id);
     numbers[id] = element;
   }
 
-  console.log(parseFloat(numbers));
+  console.log(numbers);
   return parseFloat(numbers);
+}
+
+function displayNumbers(number) {
+  const display = document.getElementById("result-text");
+  display.innerHTML += number;
 }
 
 // This function is probably going to get removed as checkOperation() has turned into a point of replacing this.
@@ -70,3 +74,9 @@ function checkOperation() {
 // Need to build a function that has the buttons for the numbers to send to something like an input field
 
 // Need to build a function that pulls the values from that input field, then manipulate the data from there
+
+buttonNumbers();
+
+// Now, instead of using onclicks for every element, I'm gonna switch to my function dynamically pulling the text from them with event listeners.
+
+// Just need to remember to convert the string of numbers to a Number(parseFloat())
