@@ -33,14 +33,17 @@ function buttonOperation() {
 
 // Would probably make sense here to use the same function I put in checkOperation().
 function buttonNumbers() {
-  const ids = ["num-1", "num-2", "num-3", "num-4", "num-5", "num-6", "num-7", "num-8", "num-9", "num-0"];
-  const elements = document.getElementById("btn-num").value;
+  const ids = ["num-0", "num-1", "num-2", "num-3", "num-4", "num-5", "num-6", "num-7", "num-8", "num-9", "decimal"];
+  const numbers = {};
+  const length = document.getElementByClassName("")
 
-  for (elements of numbers) {
-    numbers.push(numbers);
+  for (const id of ids) {
+    const element = document.getElementById(id);
+    numbers[id] = element;
   }
 
-  return numbers;
+  console.log(parseFloat(numbers));
+  return parseFloat(numbers);
 }
 
 // This function is probably going to get removed as checkOperation() has turned into a point of replacing this.
@@ -62,24 +65,8 @@ function checkOperation() {
     
 }
 
-// Unsure if any of these functions below will be used unless they can contribute to cleanliness of the code later.
-function addition() {
-    const addition = document.getElementById("operation-addition").value;
-}
+// Need to build a function to get the current length of the number before performing an operation
 
-function subtraction() {
-    const subtraction = document.getElementById("operation-subtraction").value;
-}
+// Need to build a function that has the buttons for the numbers to send to something like an input field
 
-function multiplication() {
-    const multiplication = document.getElementById("operation-multiplication").value;
-}
-
-function division() {
-    const division = document.getElementById("operation-division").value;
-}
-
-/*
-const ids = ["uppercase", "lowercase", "numbers", "special"];
-const properties = {};
-*/
+// Need to build a function that pulls the values from that input field, then manipulate the data from there

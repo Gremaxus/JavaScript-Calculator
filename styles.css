@@ -2,9 +2,18 @@
     border: 2px solid grey;
 }
 
-.btn-operation, .btn-num, .btn-equals, .zero {
+.row-grey, .row-numbers {
+    margin-left: 5px;
+}
+
+.row-grey {
+    margin-top: 5px;
+}
+
+.btn-operation, .btn-num, .btn-equals, .zero, .decimal {
     border: 1px solid black;
     box-sizing: border-box;
+    margin: 2px 0;
 }
 
 .btn-operation {
@@ -18,8 +27,13 @@
 }
 
 .zero {
-    width: 180px;
+    width: 258px;
     
+}
+
+.decimal {
+    width: 127px;
+    margin-bottom: 5px;
 }
 
 .btn-equals {
