@@ -18,3 +18,14 @@
     margin: 2px 0;
 }
 
+.btn-num, .btn-operation, .decimal {
+    width: 100px;
+    height: 25px;
+}
+
+.zero {
+    width: 204px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
