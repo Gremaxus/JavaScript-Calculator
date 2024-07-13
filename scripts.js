@@ -51,7 +51,7 @@ function displayNumbers(number) {
   display.innerHTML += number;
 
   console.log(number);
-  return parseFloat(number, 10);
+  return parseFloat(number, 10); // <-- MOVE THIS TO OPERATIONS/CALCULATIONS TO PREVENT DUPLICATE RETURNS
 }
 
 // Need to build a function to get the current length of the number before performing an operation
