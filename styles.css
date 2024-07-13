@@ -1,5 +1,7 @@
 .calculator {
     border: 2px solid grey;
+    display: grid;
+    grid-template-columns: auto;
 }
 
 .row-grey, .row-numbers {
@@ -16,33 +18,3 @@
     margin: 2px 0;
 }
 
-.btn-operation {
-    width: 5%;
-    margin-bottom: 1px;
-}
-
-.btn-num {
-    width: 5%;
-    margin-bottom: 1px;
-}
-
-.zero {
-    width: 258px;
-    
-}
-
-.decimal {
-    width: 127px;
-    margin-bottom: 5px;
-}
-
-.btn-equals {
-    height: 62px; 
-    margin-right: 822px;
-    margin-top: 1px;
-    width: 53px;
-    display: flex;
-    flex-direction: right;
-    float: right;
-    
-}
