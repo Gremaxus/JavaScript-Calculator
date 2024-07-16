@@ -1,31 +1,62 @@
 .calculator {
+    width: 15%;
     border: 2px solid grey;
-    display: grid;
-    grid-template-columns: auto;
+    border-radius: 2px;
+    padding: 2px;
+    display: inline-block;
 }
 
-.row-grey, .row-numbers {
-    margin-left: 5px;
-}
-
-.row-grey {
-    margin-top: 5px;
-}
-
-.btn-operation, .btn-num, .btn-equals, .zero, .decimal {
+.result {
     border: 1px solid black;
-    box-sizing: border-box;
-    margin: 2px 0;
+    padding: 5px;
+    height: 30px;
+    margin: 5px 2px 5px 2px;
+    display: flex;
+    align-items: center;
 }
 
-.btn-num, .btn-operation, .decimal {
-    width: 100px;
-    height: 25px;
+.result-text {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.zero {
-    width: 204px;
-    height: 25px;
-    margin-bottom: 15px;
+.row {
+    display: flex;
+    height: 30px;
+    gap: 5px;
+    margin-top: 10px;
 }
 
+.grey button {
+    background-color: rgb(104, 104, 104);
+}
+
+.main-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.btn {
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: lightgray;
+}
+
+.numbers {
+    flex: 4;
+}
+
+.equal-btn {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+.btn:active {
+    background-color: rgb(124, 124, 124);
+}

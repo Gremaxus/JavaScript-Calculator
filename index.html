@@ -11,30 +11,36 @@
         <div class="result">
             <span class="result-text" id="result-text"></span>
         </div>
-        <div class="row-grey">
-            <button type="button" class="btn-operation" onclick="checkOperation()" id="operation-addition">+</button>
-            <button type="button" class="btn-operation" onclick="checkOperation()" id="operation-subtraction">-</button>
-            <button type="button" class="btn-operation" onclick="checkOperation()" id="operation-multiplication">*</button>
-            <button type="button" class="btn-operation" onclick="checkOperation()" id="operation-division">/</button>
+        <div class="row grey">
+            <button type="button" class="btn">+</button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">*</button>
+            <button type="button" class="btn">/</button>
         </div>
-        <div class="row-numbers">
-            <button type="button" class="btn-num" onclick="buttonNumbers('7')" id="num-7">7</button>
-            <button type="button" class="btn-num" onclick="buttonNumbers('8')" id="num-8">8</button>
-            <button type="button" class="btn-num" onclick="buttonNumbers('9')" id="num-9">9</button>
-            <button type="button" class="btn-num" onclick="checkOperation()" id="equals">=</button>
-        </div>
-        <div class="row-numbers">
-            <button type="button" class="btn-num" onclick="buttonNumbers('4')" id="num-4">4</button>
-            <button type="button" class="btn-num" onclick="buttonNumbers('5')" id="num-5">5</button>
-            <button type="button" class="btn-num" onclick="buttonNumbers('6')" id="num-6">6</button>
-        </div>
-        <div class="row-numbers">
-            <button type="button" class="btn-num" onclick="buttonNumbers('1')" id="num-1">1</button>
-            <button type="button" class="btn-num" onclick="buttonNumbers('2')" id="num-2">2</button>
-            <button type="button" class="btn-num" onclick="buttonNumbers('3')" id="num-3">3</button>
-            <br />
-            <button type="button" class="zero" onclick="buttonNumbers('0')" id="num-0">0</button>
-            <button type="button" class="decimal" onclick="buttonNumbers('.')" id="decimal">.</button>
+        <div class="main-buttons">
+            <div class="numbers">
+                <div class="row">
+                    <button type="button" class="btn">7</button>
+                    <button type="button" class="btn">8</button>
+                    <button type="button" class="btn">9</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn">4</button>
+                    <button type="button" class="btn">5</button>
+                    <button type="button" class="btn">6</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn">1</button>
+                    <button type="button" class="btn">2</button>
+                    <button type="button" class="btn">3</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn">0</button>
+                    <button type="button" class="btn">.</button>
+                    <button type="button" class="btn">c</button>
+                </div>
+            </div>
+            <button type="button" class="btn equal-btn">=</button>
         </div>
     </div>
     
