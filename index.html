@@ -12,35 +12,35 @@
             <span class="result-text" id="result-text"></span>
         </div>
         <div class="row grey">
-            <button type="button" class="btn">+</button>
-            <button type="button" class="btn">-</button>
-            <button type="button" class="btn">*</button>
-            <button type="button" class="btn">/</button>
+            <button type="button" class="btn" onclick="operationClicked('+')">+</button>
+            <button type="button" class="btn" onclick="operationClicked('-')">-</button>
+            <button type="button" class="btn" onclick="operationClicked('*')">*</button>
+            <button type="button" class="btn" onclick="operationClicked('/')">/</button>
         </div>
         <div class="main-buttons">
             <div class="numbers">
                 <div class="row">
-                    <button type="button" class="btn">7</button>
-                    <button type="button" class="btn">8</button>
-                    <button type="button" class="btn">9</button>
+                    <button type="button" class="btn" onclick="numberClicked(7)">7</button>
+                    <button type="button" class="btn" onclick="numberClicked(8)">8</button>
+                    <button type="button" class="btn" onclick="numberClicked(9)">9</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn">4</button>
-                    <button type="button" class="btn">5</button>
-                    <button type="button" class="btn">6</button>
+                    <button type="button" class="btn" onclick="numberClicked(4)">4</button>
+                    <button type="button" class="btn" onclick="numberClicked(5)">5</button>
+                    <button type="button" class="btn" onclick="numberClicked(6)">6</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn">1</button>
-                    <button type="button" class="btn">2</button>
-                    <button type="button" class="btn">3</button>
+                    <button type="button" class="btn" onclick="numberClicked(1)">1</button>
+                    <button type="button" class="btn" onclick="numberClicked(2)">2</button>
+                    <button type="button" class="btn" onclick="numberClicked(3)">3</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn">0</button>
-                    <button type="button" class="btn">.</button>
-                    <button type="button" class="btn">c</button>
+                    <button type="button" class="btn" onclick="numberClicked(0)">0</button>
+                    <button type="button" class="btn" onclick="numberClicked('.')">.</button>
+                    <button type="button" class="btn" onclick="operationClicked('c')">c</button>
                 </div>
             </div>
-            <button type="button" class="btn equal-btn">=</button>
+            <button type="button" class="btn equal-btn" onclick="operationClicked('=')">=</button>
         </div>
     </div>
     
